@@ -1,6 +1,6 @@
 {
-  "name": "vuetify",
-  "version": "1.0.17",
+  "name": "vuetify-mod",
+  "version": "1.1.0",
   "author": {
     "name": "John Leider",
     "email": "john@vuetifyjs.com"
@@ -27,7 +27,7 @@
     "lint": "eslint --ext .js,.vue src",
     "preparecommitmsg": "node dev/prepare-commit-message.js",
     "commitmsg": "node dev/lint-commit-message.js",
-    "precommit": "node dev/warn-npm-install.js && yarn lint && yarn test"
+    "precommit": "node dev/warn-npm-install.js && npm run lint && npm run test:win32"
   },
   "description": "Vue.js 2 Semantic Component Framework",
   "devDependencies": {
